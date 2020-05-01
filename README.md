@@ -40,11 +40,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] What is the purpose of using _sessions_?
 
+- A session is used to store information about a user; whether it be a username, password, or location the information varies depending on the applications needs. A session normally recieves a cookie through a Set_Cookie header. The cookie contains a sessions id that is used to retrieve the information in the session matching the id. 
+
 - [ ] What does bcrypt do to help us store passwords in a secure manner.
+
+- Bcrypt hashes a password several times depending on its configuration. It takes a string and turns it into a series of characters making it hard for hackers to hack the app. 
 
 - [ ] What does bcrypt do to slow down attackers?
 
+- Bcrypt hashes a string meaning it turns it into random characters. IT takes the previousely hashed string and re-hashes it a number of times.
+
 - [ ] What are the three parts of the JSON Web Token?
+
+- The three parts are the Header, Payload, and Signature. The Header has the alogrithm and token type. The Payload has the permissions we want the token to have like username or a date.
 
 ## Minimum Viable Product
 
